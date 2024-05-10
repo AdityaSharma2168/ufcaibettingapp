@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current UFC Fights to Bet On</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid white;
+        }
+        
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        .predict-button {
+            padding: 10px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .predict-button:hover {
+            background-color: darkgreen;
+        }
+
+        td button {
+            width: 100%; /* Full width of the cell */
+            margin-top: 5px; /* Slight spacing from the cell content */
+        }
+    </style>
+    <script>
+        function goToKhamzatWhittaker() {
+            window.location.href = '/khamzat-whittaker';
+        }
+        function goToIslamPoirier() {
+            window.location.href = '/islam-poirier';
+        }
+        function goToConorChandler() {
+            window.location.href = '/conor-chandler';
+        }
+    </script>
+</head>
+<body>
+    <h1>Current UFC Fights to Bet On</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Fight</th>
+                <th>Event Date</th>
+                <th>Location</th>
+                <th>Action</th> <!-- New column for buttons -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Khamzat vs. Whittaker</td>
+                <td>June 23</td>
+                <td>Abu Dhabi</td>
+                <td><button class="predict-button" onclick="goToKhamzatWhittaker()">Predict</button></td>
+            </tr>
+            <tr>
+                <td>Islam vs. Poirier</td>
+                <td>June 2</td>
+                <td>Newark</td>
+                <td><button class="predict-button" onclick="goToIslamPoirier()">Predict</button></td>
+            </tr>
+            <tr>
+                <td>Conor vs. Chandler</td>
+                <td>June 30</td>
+                <td>Las Vegas</td>
+                <td><button class="predict-button" onclick = "goToConorChandler()">Predict</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</body>
+</html>

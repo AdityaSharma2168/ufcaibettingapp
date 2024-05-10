@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CasUFC</title>
+  <style>
+    body {
+      background: url('https://wallpapers.com/images/hd/ufc-4k-00kotgdua7nkjo1o.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: cyan;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 3px;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .play-button {
+      width: 100px;
+      height: 60px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid white;
+      border-radius: 8px;
+      position: absolute;
+      top: 80%; /* Adjusted to move further down */
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-button::before {
+      content: '\25B6'; /* Unicode character for play icon */
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>CasUFC</h1>
+  <p>Made by: Adi Sharma</p>
+  <!-- Play button -->
+  <!-- Play button with onClick event -->
+<div class="play-button" onclick="window.location.href='/login';"></div>
+</body>
+</html>

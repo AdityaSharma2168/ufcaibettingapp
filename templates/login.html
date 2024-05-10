@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      background: url('https://e1.pxfuel.com/desktop-wallpaper/925/744/desktop-wallpaper-artstation-khamzat-chimaev.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: yellow;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1, p, form, label, input {
+      font-size: 1.5em; /* Consistent font sizing */
+    }
+    input {
+      width: 200px;
+      height: 30px;
+      margin-bottom: 15px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var passwordInput = document.getElementById('password');
+      passwordInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          window.location.href = '/dashboard'; // Change this URL as needed
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <p>Made by: Adi Sharma</p>
+  <form>
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+  </form>
+</body>
+</html>
